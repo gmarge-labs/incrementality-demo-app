@@ -1,0 +1,373 @@
+{
+  "brand": "Northfield Goods (sample brand)",
+  "disclaimer": "Synthetic sample data for a fictional brand. Not a real company, not real revenue, not any real advertiser's performance.",
+  "generator": {
+    "seed": 20260921,
+    "start_date": "2025-01-06",
+    "end_date": "2025-07-06",
+    "n_weeks": 26,
+    "n_days": 182,
+    "regions": [
+      "Region 01",
+      "Region 02",
+      "Region 03",
+      "Region 04",
+      "Region 05",
+      "Region 06",
+      "Region 07",
+      "Region 08",
+      "Region 09",
+      "Region 10",
+      "Region 11",
+      "Region 12",
+      "Region 13",
+      "Region 14",
+      "Region 15",
+      "Region 16",
+      "Region 17",
+      "Region 18",
+      "Region 19",
+      "Region 20"
+    ],
+    "paid_channels": [
+      "Meta prospecting",
+      "Meta retargeting",
+      "Google branded search",
+      "Google shopping",
+      "TikTok"
+    ],
+    "unpaid_channels": [
+      "Email",
+      "Organic"
+    ],
+    "revenue_field": "shopify_orders.revenue (gross, before discount and refund)"
+  },
+  "attribution_gap": {
+    "note": "Platform-attributed revenue summed across channels far exceeds what the store actually took. Double-counted conversions, view-through credit and overlapping windows.",
+    "shopify_revenue": 13100339.91,
+    "platform_attributed_revenue": 18340476.04,
+    "ratio": 1.4,
+    "designed_ratio": 1.4
+  },
+  "channel_truth": [
+    {
+      "channel": "Meta prospecting",
+      "spend": 973266.99,
+      "platform_attributed_revenue": 3433781.96,
+      "reported_roas": 3.5281,
+      "true_incremental_revenue": 2226811.93,
+      "true_incremental_roas": 2.288,
+      "true_over_reported": 0.6485,
+      "designed_true_iroas": 2.3,
+      "designed_reported_roas": 3.5
+    },
+    {
+      "channel": "Meta retargeting",
+      "spend": 474184.27,
+      "platform_attributed_revenue": 3366408.28,
+      "reported_roas": 7.0994,
+      "true_incremental_revenue": 522933.2,
+      "true_incremental_roas": 1.1028,
+      "true_over_reported": 0.1553,
+      "designed_true_iroas": 1.1,
+      "designed_reported_roas": 7.0
+    },
+    {
+      "channel": "Google branded search",
+      "spend": 583729.02,
+      "platform_attributed_revenue": 4674788.88,
+      "reported_roas": 8.0085,
+      "true_incremental_revenue": 468807.34,
+      "true_incremental_roas": 0.8031,
+      "true_over_reported": 0.1003,
+      "designed_true_iroas": 0.8,
+      "designed_reported_roas": 8.0
+    },
+    {
+      "channel": "Google shopping",
+      "spend": 885426.54,
+      "platform_attributed_revenue": 4433131.69,
+      "reported_roas": 5.0068,
+      "true_incremental_revenue": 1822214.92,
+      "true_incremental_roas": 2.058,
+      "true_over_reported": 0.411,
+      "designed_true_iroas": 2.05,
+      "designed_reported_roas": 5.0
+    },
+    {
+      "channel": "TikTok",
+      "spend": 580401.33,
+      "platform_attributed_revenue": 2432365.23,
+      "reported_roas": 4.1908,
+      "true_incremental_revenue": 933252.19,
+      "true_incremental_roas": 1.6079,
+      "true_over_reported": 0.3837,
+      "designed_true_iroas": 1.6,
+      "designed_reported_roas": 4.2
+    }
+  ],
+  "incrementality_ranking": {
+    "note": "true_over_reported = true incremental ROAS / platform-reported ROAS. Lower means more overstated.",
+    "most_overstated": [
+      "Google branded search",
+      "Meta retargeting"
+    ],
+    "closest_to_reported": "Meta prospecting",
+    "order_most_to_least_overstated": [
+      "Google branded search",
+      "Meta retargeting",
+      "TikTok",
+      "Google shopping",
+      "Meta prospecting"
+    ]
+  },
+  "geo_holdouts": [
+    {
+      "channel": "Meta prospecting",
+      "weeks": [
+        5,
+        8
+      ],
+      "start_date": "2025-02-03",
+      "end_date": "2025-03-02",
+      "test_regions": [
+        "Region 01",
+        "Region 03",
+        "Region 05",
+        "Region 07",
+        "Region 09"
+      ],
+      "control_regions": [
+        "Region 02",
+        "Region 04",
+        "Region 06",
+        "Region 08",
+        "Region 10"
+      ],
+      "paused_spend_counterfactual": 46896.24,
+      "true_incremental_revenue_lost": 109131.32,
+      "true_lift_pct_of_test_region_revenue": 17.954,
+      "implied_true_iroas": 2.3271
+    },
+    {
+      "channel": "Meta retargeting",
+      "weeks": [
+        9,
+        12
+      ],
+      "start_date": "2025-03-03",
+      "end_date": "2025-03-30",
+      "test_regions": [
+        "Region 11",
+        "Region 13",
+        "Region 15",
+        "Region 17",
+        "Region 19"
+      ],
+      "control_regions": [
+        "Region 12",
+        "Region 14",
+        "Region 16",
+        "Region 18",
+        "Region 20"
+      ],
+      "paused_spend_counterfactual": 14641.34,
+      "true_incremental_revenue_lost": 16338.28,
+      "true_lift_pct_of_test_region_revenue": 4.09,
+      "implied_true_iroas": 1.1159
+    },
+    {
+      "channel": "Google branded search",
+      "weeks": [
+        13,
+        16
+      ],
+      "start_date": "2025-03-31",
+      "end_date": "2025-04-27",
+      "test_regions": [
+        "Region 01",
+        "Region 03",
+        "Region 05",
+        "Region 07",
+        "Region 09"
+      ],
+      "control_regions": [
+        "Region 02",
+        "Region 04",
+        "Region 06",
+        "Region 08",
+        "Region 10"
+      ],
+      "paused_spend_counterfactual": 28868.33,
+      "true_incremental_revenue_lost": 23013.76,
+      "true_lift_pct_of_test_region_revenue": 3.565,
+      "implied_true_iroas": 0.7972
+    },
+    {
+      "channel": "Google shopping",
+      "weeks": [
+        17,
+        20
+      ],
+      "start_date": "2025-04-28",
+      "end_date": "2025-05-25",
+      "test_regions": [
+        "Region 11",
+        "Region 13",
+        "Region 15",
+        "Region 17",
+        "Region 19"
+      ],
+      "control_regions": [
+        "Region 12",
+        "Region 14",
+        "Region 16",
+        "Region 18",
+        "Region 20"
+      ],
+      "paused_spend_counterfactual": 29393.25,
+      "true_incremental_revenue_lost": 59980.22,
+      "true_lift_pct_of_test_region_revenue": 14.434,
+      "implied_true_iroas": 2.0406
+    },
+    {
+      "channel": "TikTok",
+      "weeks": [
+        21,
+        24
+      ],
+      "start_date": "2025-05-26",
+      "end_date": "2025-06-22",
+      "test_regions": [
+        "Region 01",
+        "Region 03",
+        "Region 05",
+        "Region 07",
+        "Region 09"
+      ],
+      "control_regions": [
+        "Region 02",
+        "Region 04",
+        "Region 06",
+        "Region 08",
+        "Region 10"
+      ],
+      "paused_spend_counterfactual": 31193.6,
+      "true_incremental_revenue_lost": 49382.28,
+      "true_lift_pct_of_test_region_revenue": 7.413,
+      "implied_true_iroas": 1.5831
+    }
+  ],
+  "anomalies": {
+    "creative_fatigue": {
+      "table": "ad_spend",
+      "week": 20,
+      "channel": "Meta prospecting",
+      "ad_set": "Core | Broad 25-44",
+      "start_date": "2025-05-19",
+      "end_date": "2025-05-25",
+      "frequency_prior_week": 2.106,
+      "frequency_fatigue_week": 4.389,
+      "frequency_multiple": 2.084,
+      "reported_roas_prior_week": 3.4741,
+      "reported_roas_fatigue_week": 1.5503
+    },
+    "meta_pixel_double_count": {
+      "table": "ad_spend",
+      "week": 12,
+      "channels": [
+        "Meta prospecting",
+        "Meta retargeting"
+      ],
+      "dates": [
+        "2025-03-25",
+        "2025-03-26",
+        "2025-03-27"
+      ],
+      "multiplier": 2.0,
+      "note": "platform_attributed_revenue only; spend, clicks and Shopify revenue are unaffected."
+    },
+    "ga4_missing_days": {
+      "table": "ga4_sessions",
+      "week": 8,
+      "dates": [
+        "2025-02-26",
+        "2025-02-27"
+      ],
+      "note": "No rows at all for these dates. Shopify and ad_spend still have them."
+    },
+    "reporting_lag": {
+      "tables": [
+        "ad_spend",
+        "ga4_sessions"
+      ],
+      "dates": [
+        "2025-07-05",
+        "2025-07-06"
+      ],
+      "ad_spend_share_of_final": [
+        0.82,
+        0.45
+      ],
+      "ga4_share_of_final": [
+        0.88,
+        0.6
+      ],
+      "note": "Numbers are still filling in. shopify_orders is complete for these dates."
+    }
+  },
+  "other_features": {
+    "promo_window": {
+      "week": 15,
+      "dates": [
+        "2025-04-14",
+        "2025-04-15",
+        "2025-04-16",
+        "2025-04-17"
+      ],
+      "note": "Higher demand and a much higher share of discounted orders."
+    },
+    "matched_region_pairs": [
+      [
+        "Region 01",
+        "Region 02"
+      ],
+      [
+        "Region 03",
+        "Region 04"
+      ],
+      [
+        "Region 05",
+        "Region 06"
+      ],
+      [
+        "Region 07",
+        "Region 08"
+      ],
+      [
+        "Region 09",
+        "Region 10"
+      ],
+      [
+        "Region 11",
+        "Region 12"
+      ],
+      [
+        "Region 13",
+        "Region 14"
+      ],
+      [
+        "Region 15",
+        "Region 16"
+      ],
+      [
+        "Region 17",
+        "Region 18"
+      ],
+      [
+        "Region 19",
+        "Region 20"
+      ]
+    ]
+  }
+}
